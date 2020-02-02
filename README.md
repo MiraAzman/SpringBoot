@@ -1,4 +1,4 @@
-# CRUD in Student Module using Spring Boot, Rest API & MySQL
+# CRUD using Spring Boot, Rest API & MySQL
 *by Amira Azman*
 
 ## Steps to Setup
@@ -6,14 +6,16 @@
 **1. Clone the application**
 
 ```bash
-git clone https://github.com/callicoder/spring-boot-mysql-rest-api-tutorial.git
+git clone https://github.com/MiraAzman/springboot.git
 ```
 
-**2. Create Mysql database**
+**2. Restore Mysql dump file**
+
++ the dump file is in `database`
+
 ```bash
-create database notes_app
+mysql -u <user> -p < db.sql
 ```
-
 **3. Change mysql username and password as per your installation**
 
 + open `src/main/resources/application.properties`
@@ -51,9 +53,9 @@ The app will start running at <http://localhost:8080>.
 
 METHOD | PATH | DESCRIPTION 
 ------------|-----|------------
-GET | /api/problem/{code} | get all Problem-Subproblem with code
-POST | /api/problem/{code} | save Problem with code
-DELETE | /api/problem/{code}/all | delete all Problem-Subproblem with code
+GET | /api/students/ | get all students
+GET | /api/students/{student_id} | get student by student id
+PUT | /api/students/{code}/all | delete all Problem-Subproblem with code
 POST | /api/subproblem | save Subproblem
 
 
