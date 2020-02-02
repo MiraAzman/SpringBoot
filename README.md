@@ -39,24 +39,12 @@ The app will start running at <http://localhost:8080>.
 
 ## RESTful API Server ##
 
-    GET /api/notes --> view all students
-    
-    POST /api/notes
-    
-    GET /api/notes/{noteId}
-    
-    PUT /api/notes/{noteId}
-    
-    DELETE /api/notes/{noteId}
-
-**2. API Description for Problem & SubProblem**
-
 METHOD | PATH | DESCRIPTION 
 ------------|-----|------------
 GET | /api/students/ | get all students
 GET | /api/students/{student_id} | get student by student id
-PUT | /api/students/{code}/all | delete all Problem-Subproblem with code
-POST | /api/subproblem | save Subproblem
+PUT | /api/students/{student_id} | update student
+DELETE | /api/students/{student_id} | delete student
 
 
 
