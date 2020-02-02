@@ -28,16 +28,14 @@ mysql -u <user> -p < db.sql
 mvn spring-boot:run
 ```
 
-The app will start running at <http://localhost:8080>.
-
 ## RESTful API Server ##
 
 METHOD | PATH | DESCRIPTION 
 ------------|-----|------------
-GET | /api/students/ | get all students
-GET | /api/students/{student_id} | get student by student id
-PUT | /api/students/{student_id} | update student
-DELETE | /api/students/{student_id} | delete student
+GET | http://localhost:8080/api/students/ | get all students
+GET | http://localhost:8080/api/students/{student_id} | get student by student id
+PUT | http://localhost:8080/api/students/{student_id} | update student
+DELETE | http://localhost:8080/api/students/{student_id} | delete student
 
 ## DataTable in Client Side ##
 
