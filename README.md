@@ -22,14 +22,7 @@ mysql -u <user> -p < db.sql
 
 + change `spring.datasource.username` and `spring.datasource.password` as per your mysql installation
 
-**4. Build and run the app using maven**
-
-```bash
-mvn package
-java -jar target/easy-notes-1.0.0.jar
-```
-
-Alternatively, you can run the app without packaging it using -
+**4. Run the app using maven**
 
 ```bash
 mvn spring-boot:run
