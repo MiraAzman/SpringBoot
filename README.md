@@ -46,5 +46,6 @@ GET | /api/students/{student_id} | get student by student id
 PUT | /api/students/{student_id} | update student
 DELETE | /api/students/{student_id} | delete student
 
+## DataTable in Client Side ##
 
-
+You can access thru <http://localhost:8080/index.html>.
