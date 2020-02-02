@@ -48,4 +48,7 @@ DELETE | /api/students/{student_id} | delete student
 
 ## DataTable in Client Side ##
 
+DataTable is used to view student list retrieved from REST api. 
 You can access thru <http://localhost:8080/index.html>.
+
+![datatable](src/main/resources/public/images/datatable.png)
